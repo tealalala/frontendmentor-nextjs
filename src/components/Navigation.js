@@ -1,7 +1,7 @@
 export default function Navigation({ data_company, data_nav_left, data_nav_right }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+      <div className="container">
         <a className="navbar-brand" href={data_company.url}>
           {data_company.name}
         </a>
@@ -19,7 +19,7 @@ export default function Navigation({ data_company, data_nav_left, data_nav_right
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto">
             {data_nav_left.map((item, index) => (
-              <li className="nav-item">
+              <li className="nav-item" id={index}>
                 <a className="nav-link" href={item.url}>
                   {item.title}
                 </a>
