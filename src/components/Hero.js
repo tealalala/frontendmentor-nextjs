@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero({ data_hero }) {
   let contentLeft = (
-    <div class="col">
+    <div className="col">
       <h1>{data_hero.title}</h1>
       <p>{data_hero.paragraph}</p>
       <button>
@@ -11,7 +11,7 @@ export default function Hero({ data_hero }) {
     </div>
   );
   let contentRight = (
-    <div class="col">
+    <div className="col">
       <Image
         src={data_hero.image_url}
         width="300px"
@@ -22,8 +22,8 @@ export default function Hero({ data_hero }) {
   );
 
   return (
-    <section class="container">
-      <div class="row">
+    <section className="container">
+      <div className="row">
         {contentLeft}
         {contentRight}
       </div>

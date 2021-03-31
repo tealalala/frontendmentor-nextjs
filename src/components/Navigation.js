@@ -19,7 +19,7 @@ export default function Navigation({ data_company, data_nav_left, data_nav_right
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto">
             {data_nav_left.map((item, index) => (
-              <li className="nav-item" id={index}>
+              <li className="nav-item" key={index}>
                 <a className="nav-link" href={item.url}>
                   {item.title}
                 </a>
@@ -28,7 +28,7 @@ export default function Navigation({ data_company, data_nav_left, data_nav_right
           </ul>
           <ul className="nav justify-content-end">
             {data_nav_right.map((item, index) => (
-              <li className="nav-item">
+              <li className="nav-item" key={index}>
                 <a className="nav-link" href={item.url}>
                   {item.title}
                 </a>
