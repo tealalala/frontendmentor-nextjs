@@ -34,6 +34,38 @@ export default function Home() {
         <FootnoteAttribution frontendmentor_challenge_name="URL shortening API landing page" />
         <style global jsx>{`
           @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+          .hero-container {
+            padding-top: 64px;
+          }
+
+          .hero-container .content h1 {
+            font-size: 4rem;
+            font-weight: ${theme.body.fontWeightBold};
+          }
+
+          .hero-container .content p {
+            color: ${theme.colors.GrayishViolet};
+          }
+
+          .hero-container .content button {
+            background-color: ${theme.colors.cyan};
+            border: none;
+            padding: 8px 32px;
+            text-align: center;
+            display: inline-block;
+            // font-size: 16px;
+            border-radius: 64px;
+          }
+
+          .hero-container .content a:link {
+            color: ${theme.colors.white};
+            text-decoration: none;
+          }
+
+          .hero-content .asset {
+            margin-left: 64px;
+          }
         `}</style>
       </section>
     </>
