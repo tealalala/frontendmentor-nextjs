@@ -3,7 +3,8 @@ const themeUrlShorteningApi = {
     fontFamily: 'Poppins',
     fontSize: '18px',
     fontWeightNormal: '500',
-    fontWeightMedium: '700'
+    fontWeightMedium: '700',
+    fontWeightBold: '800'
   },
   colors: {
     cyan: 'hsl(180, 66%, 49%)',
