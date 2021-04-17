@@ -167,6 +167,18 @@ export default function Home() {
 
         // Extra small devices (portrait phones, less than 576px)
         @media (max-width: 576px) {
+          .testimonials-grid-section {
+            grid-template-columns: 1fr;
+            gap: 24px;
+          }
+          .card.card-0,
+          .card.card-1,
+          .card.card-2,
+          .card.card-3,
+          .card.card-4 {
+            grid-column: auto;
+            grid-row: auto;
+          }
         }
 
         // Small devices (landscape phones, less than 768px)
