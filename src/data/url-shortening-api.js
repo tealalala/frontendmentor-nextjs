@@ -1,5 +1,12 @@
 export default [
   {
+    seo: {
+      title:
+        "URL Shortening API - a Frontendmentor.io challenge completed by Tea La",
+      description: "/home",
+    },
+  },
+  {
     company: {
       name: "Shortly",
       url: "/home",

@@ -7,22 +7,25 @@ import data from '../src/data/url-shortening-api.js'
 import Hero from '../src/components/Hero'
 import FootnoteAttribution from '../src/components/FootnoteAttribution'
 import Navigation from '../src/components/Navigation'
+import Seo from '../src/components/Seo'
 
 export default function Home() {
-  const dataCompany = data[0]["company"];
-  const dataNavLeft = data[1]["navigation_left"];
-  const dataNavRight = data[2]["navigation_right"];
-  const dataHero = data[3]["hero"];
-  const dataBodyContent = data[4]["body_content"];
-  const dataBodyCard = data[5]["body_card"];
-  const dataFooterCta = data[6]["footer_cta"];
-  const dataFooterFeatures = data[7]["footer"][0]["features"];
-  const dataFooterResources = data[7]["footer"][0]["resources"]
-  const dataFooterCompany = data[7]["footer"][0]["company"];
-  const dataSocial = data[8]["social"];
+  const dataSeo = data[0]["seo"];
+  const dataCompany = data[1]["company"];
+  const dataNavLeft = data[2]["navigation_left"];
+  const dataNavRight = data[3]["navigation_right"];
+  const dataHero = data[4]["hero"];
+  const dataBodyContent = data[5]["body_content"];
+  const dataBodyCard = data[6]["body_card"];
+  const dataFooterCta = data[7]["footer_cta"];
+  const dataFooterFeatures = data[8]["footer"][0]["features"];
+  const dataFooterResources = data[8]["footer"][0]["resources"]
+  const dataFooterCompany = data[8]["footer"][0]["company"];
+  const dataSocial = data[9]["social"];
 
   return (
     <>
+      <Seo seo={dataSeo} />
       <Navigation
         data_company={dataCompany}
         data_nav_left={dataNavLeft}
