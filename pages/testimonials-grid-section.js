@@ -178,6 +178,7 @@ export default function Home() {
           .card.card-4 {
             grid-column: auto;
             grid-row: auto;
+            padding-bottom: 24px;
           }
         }
 
