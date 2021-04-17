@@ -166,10 +166,10 @@ export default function Home() {
         }
 
         // Extra small devices (portrait phones, less than 576px)
-        @media (max-width: 576px) {
+        @media screen and (max-width: 576px) {
           .testimonials-grid-section {
-            grid-template-columns: 1fr;
-            gap: 24px;
+            grid-template-columns: 1fr !important;
+            grid-row-gap: 24px !important;
           }
           .card.card-0,
           .card.card-1,
@@ -183,7 +183,7 @@ export default function Home() {
         }
 
         // Small devices (landscape phones, less than 768px)
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
           .testimonials-grid-section {
             display: flex;
             flex-direction: column;
@@ -196,7 +196,7 @@ export default function Home() {
         }
 
         // Medium devices (tablets, less than 992px)
-        @media (max-width: 992px) {
+        @media screen and (max-width: 992px) {
           .testimonials-grid-section {
             grid-template-columns: 0.9fr 1fr 0.9fr;
             grid-template-rows: auto auto auto;
@@ -225,7 +225,7 @@ export default function Home() {
         }
 
         // Large devices (desktops, less than 1200px)
-        @media (max-width: 1200px) {
+        @media screen and (max-width: 1200px) {
         }
       `}</style>
     </section>
